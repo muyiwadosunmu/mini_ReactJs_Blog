@@ -15,7 +15,7 @@ const PostPage = ({ posts, handleDelete }) => {
             <button onClick={() => handleDelete(post.id)}>Delete Post</button>
           </>
         )}
-        {!post && 
+        {!post &&
         <>
           <h2>Post Not Found</h2>
           <p>Well, that's disappointing</p>
