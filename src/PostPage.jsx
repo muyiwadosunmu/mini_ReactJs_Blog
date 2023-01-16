@@ -1,9 +1,17 @@
 import React from 'react'
+import { useParams, Link } from 'react-router-dom'
 
-const PostPage = () => {
+const PostPage = ({posts,handleDelete}) => {
+  const {id} = useParams();
+  const post = posts.find(post => (post.id).toString() === id);
   return (
-    <main>
-        <h1>Post Page</h1>
+    <main className='postPage'>
+        <article className='post'></article>
+        {post && 
+          <>
+            <h2>{post.title}</h2>
+          </>
+        }
     </main>
   )
 }

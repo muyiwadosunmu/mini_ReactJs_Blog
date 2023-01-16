@@ -45,7 +45,7 @@ function App() {
       search={search}
       setSearch={setSearch}
       />
-      <Switch>
+      <Switch> 
         <Route exact path= "/">
           <Home
             posts={posts}
